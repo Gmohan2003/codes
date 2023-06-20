@@ -1,0 +1,19 @@
+-- create a table
+CREATE TABLE students(ID integer,NAME varchar(50),AGE int,MAJOR varchar(50), marks varchar(10)); 
+-- insert some values 
+INSERT INTO students (ID , NAME , AGE , MAJOR , marks)VALUES (1 , 'Ryan','21', 'PHYSUCS','90');
+INSERT INTO students (ID , NAME , AGE , MAJOR , marks) VALUES (2 ,'Joanna', '20' , 'MATHS','91'),
+(3, 'wills' , '20' , 'physics','93'),(4, 'wick' , '20' , 'biology','89'),(5, 'amy' , '20' , 'language','99'),(6, 'jack' , '20' , 'maths','97');
+-- alter table students add column   email varchar(100);
+-- update students set email="ryan.m@hmail.com" where id =1;
+-- delete from students where id = 2;
+-- select * from students where id between 3 and 5; 
+-- select * from students where name in('wills','amy');
+-- fetch some VALUES
+-- select * from students
+-- select name from students
+-- alter table students add column   marks varchar(100);
+select count(id) as no_of_id from students;
+select avg(marks) as avg_mark from students;
+select sum(id) as sum_of_id from students;
+select * from students
